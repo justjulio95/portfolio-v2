@@ -4,10 +4,11 @@ export const projects = [
   {
     id: '1',
     title: 'test',
-    tech: 'JavaScript',
+    tech: 'JAVASCRIPT',
     description: 'this is a placeholder to see how this info behaves on this page',
     image: CrwnClothing,
-    link: 'https://crwn-clothingjs.netlify.app/'
+    // link: 'https://crwn-clothingjs.netlify.app/'
+    link: ''
   },
   {
     id: '2',
