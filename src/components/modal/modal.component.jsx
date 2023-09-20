@@ -5,7 +5,7 @@ const ModalWindow = ({ show, onClose, currentProject }) => {
   return (
     <Modal show={show} size='lg'>
       <Modal.Header>
-        <Modal.Title style={{ border: 'solid green 3px' }}>
+        <Modal.Title style={{ border: 'solid green 3px' }} className='fs-1'>
           {title}
         </Modal.Title>
       </Modal.Header>

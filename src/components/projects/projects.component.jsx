@@ -23,15 +23,18 @@ const Projects = () => {
   })
 
   return (
-    <div style={{ border: 'solid blue 3px' }} className="container mt-5">
-      <h1 className="text-white">HELLOOOO</h1>
-      <div style={{ border: 'solid blue 3px' }} className="d-flex">
-        <p style={{ border: 'solid red 3px' }} className="text-white text-start">
-          Below are some of the projects I've worked on. Some currently only exist on my laptop (Thanks Heroku),
-          but I'm currently working on deploying the ones that need it through Netlify.
+    <div className="container mt-5">
+      <h1 className="text-white">Projects</h1>
+      <div className="border border-3 rounded-top-2 border-bottom-0">
+        <p className="text-white text-center fs-4">
+          Below are some of the projects I've worked on.
+        </p>
+        <p className='text-center text-info fs-5'>
+          At the moment some of these projects aren't deployed properly. I'm currently 
+          in the process of migrating some of them over to Netlify.
         </p>
       </div>
-      <div style={{ border: 'solid blue 3px' }} className="d-flex flex-column flex-md-row flex-md-wrap justify-content-center">
+      <div style={{ top: "100px"}} className="d-flex flex-column flex-md-row flex-md-wrap justify-content-center border border-3 rounded-bottom-2 border-top-0">
         {mapped}
       </div>
       <div>
