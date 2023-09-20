@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Modal } from 'react-bootstrap'
 import ModalWindow from '../modal/modal.component'
 
 import { projects } from "../../data/data"
@@ -14,12 +13,12 @@ const Projects = () => {
 
   const mapped = projects.map((project, index) => {
     return (
-        <img style={{ width: '45vw', height: '35vh' }}
-          key={project.image}
-          src={project.image}
-          className="img-fluid d-block mx-3 my-3 w-auto"
-          onClick={() => { toggleModal(project, index) }}
-        />
+      <img style={{ width: '45vw', height: '35vh' }}
+        key={project.image}
+        src={project.image}
+        className="img-fluid d-block mx-3 my-3 w-auto"
+        onClick={() => { toggleModal(project, index) }}
+      />
     )
   })
 
@@ -36,7 +35,7 @@ const Projects = () => {
         {mapped}
       </div>
       <div>
-        {modalShow && <ModalWindow show={toggleModal} onClose={toggleModal} currentProject={currentProject}/>}
+        {modalShow && <ModalWindow show={toggleModal} onClose={toggleModal} currentProject={currentProject} />}
       </div>
     </div>
   )
