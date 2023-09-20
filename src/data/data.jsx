@@ -3,12 +3,12 @@ import CrwnClothing from './images/crwn-clothing.png'
 export const projects = [
   {
     id: '1',
-    title: 'test',
-    tech: 'JAVASCRIPT',
-    description: 'this is a placeholder to see how this info behaves on this page',
+    title: 'CrwnClothing',
+    tech: 'ReactJs, Firebase, SCSS, Redux',
+    description: "I built this page to practice the React skills I picked up. In its current state, you can go through the store, add/remove items from your cart and view your total.",
     image: CrwnClothing,
-    // link: 'https://crwn-clothingjs.netlify.app/'
-    link: ''
+    link: 'https://crwn-clothingjs.netlify.app/',
+    github: 'https://github.com/justjulio95/crwn-clothing'
   },
   {
     id: '2',
@@ -16,7 +16,8 @@ export const projects = [
     tech: 'JavaScript',
     description: 'this is a placeholder to see how this info behaves on this page',
     image: CrwnClothing,
-    link: 'https://crwn-clothingjs.netlify.app/'
+    link: 'https://crwn-clothingjs.netlify.app/',
+    github:''
   },
   {
     id: '3',
@@ -24,7 +25,8 @@ export const projects = [
     tech: 'JavaScript',
     description: 'this is a placeholder to see how this info behaves on this page',
     image: CrwnClothing,
-    link: 'https://crwn-clothingjs.netlify.app/'
+    link: 'https://crwn-clothingjs.netlify.app/',
+    github:''
   },
   {
     id: '4',
@@ -32,7 +34,8 @@ export const projects = [
     tech: 'JavaScript',
     description: 'this is a placeholder to see how this info behaves on this page',
     image: CrwnClothing,
-    link: 'https://crwn-clothingjs.netlify.app/'
+    link: 'https://crwn-clothingjs.netlify.app/',
+    github:''
   },
   {
     id: '5',
@@ -40,6 +43,7 @@ export const projects = [
     tech: 'JavaScript',
     description: 'this is a placeholder to see how this info behaves on this page',
     image: CrwnClothing,
-    link: 'https://crwn-clothingjs.netlify.app/'
+    link: 'https://crwn-clothingjs.netlify.app/',
+    github:''
   },
 ]

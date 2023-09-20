@@ -1,7 +1,7 @@
 import { Modal } from 'react-bootstrap'
 
 const ModalWindow = ({ show, onClose, currentProject }) => {
-  const {title, description, image, link, tech } = currentProject;
+  const {title, description, image, link, tech, github } = currentProject;
   return (
     <Modal show={show} size='lg'>
       <Modal.Header>
@@ -22,19 +22,18 @@ const ModalWindow = ({ show, onClose, currentProject }) => {
         <div className='d-flex justify-content-center'>
           {
             link ? (
-              <button className='mx-2' href={link} target='_blank'>TEST</button>
+              <a role="button" className='mx-2 bi btn btn-secondary border border-1 rounded-5 text-light' href={link} target='_blank'>TEST</a>
             ) : (
-              <p className='mx-2'>I'm working on either migrating this project to Netlify or rebuilding it altogether</p>
+              <p className='mx-2'>I'm working on migrating this project to Netlify. But the code can be found right here &#x2192;</p>
             )
           }
-          <button className='mx-2'>GITHUB</button>
+          <a role='button' className='mx-2 btn btn-secondary border border-1 rounded-5 text-light' href={github} target='_blank'>GITHUB</a>
         </div>
       </Modal.Body>
       <Modal.Footer style={{ border: 'solid green 3px' }} className='d-flex'>
         <p style={{ border: 'solid purple 3px' }} className='col-12'>Technologies Used: {tech}</p>
         <button
-          style={{ backgroundColor: 'lightgrey', borderRadius: '100px' }}
-          className='text-end'
+          className='text-end btn btn-secondary border border-1 rounded-5 text-light'
           onClick={onClose}
         >
           CLOSE

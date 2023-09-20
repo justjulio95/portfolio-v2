@@ -13,7 +13,7 @@ const Projects = () => {
 
   const mapped = projects.map((project, index) => {
     return (
-      <img style={{ width: '45vw', height: '35vh' }}
+      <img style={{ width: '45vw', height: '35vh', cursor: 'pointer' }}
         key={project.image}
         src={project.image}
         className="img-fluid d-block mx-3 my-3 w-auto"
