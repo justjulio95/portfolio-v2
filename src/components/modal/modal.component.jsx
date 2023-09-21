@@ -22,18 +22,18 @@ const ModalWindow = ({ show, onClose, currentProject }) => {
         <div className='d-flex justify-content-center'>
           {
             link ? (
-              <a role="button" className='mx-2 bi btn btn-secondary border border-1 rounded-5 text-light' href={link} target='_blank'>TEST</a>
+              <a role="button" className='mx-2 bi btn btn-info border border-1 rounded-5 text-light' href={link} target='_blank'>{title}</a>
             ) : (
               <p className='mx-2'>I'm working on migrating this project to Netlify. But the code can be found right here &#x2192;</p>
             )
           }
-          <a role='button' className='mx-2 btn btn-secondary border border-1 rounded-5 text-light' href={github} target='_blank'>GITHUB</a>
+          <a role='button' className='mx-2 btn btn-dark border border-1 rounded-5 text-light' href={github} target='_blank'>GITHUB</a>
         </div>
       </Modal.Body>
       <Modal.Footer className='d-flex'>
         <p className='col-12 fs-5'>Technologies Used: {tech}</p>
         <button
-          className='text-end btn btn-secondary border border-1 rounded-5 text-light'
+          className='text-end btn btn-danger border border-1 rounded-5 text-light'
           onClick={onClose}
         >
           CLOSE
