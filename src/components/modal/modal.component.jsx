@@ -5,16 +5,16 @@ const ModalWindow = ({ show, onClose, currentProject }) => {
   return (
     <Modal show={show} size='lg'>
       <Modal.Header>
-        <Modal.Title style={{ border: 'solid green 3px' }} className='fs-1'>
+        <Modal.Title className='fs-1'>
           {title}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className='d-flex flex-column'>
-        <div style={{ border: 'solid blue 3px' }} className='text-center'>
-          <p>{description}</p>
+        <div className='text-center'>
+          <p className='fs-5'>{description}</p>
         </div>
         <div className='d-flex justify-content-center'>
-          <img style={{ width: '70vw', height: '45vh', border: 'solid red 3px' }}
+          <img style={{ width: '70vw', height: '45vh' }}
             src={image}
             className="img-fluid d-block mx-2 my-3 w-auto"
           />
@@ -30,8 +30,8 @@ const ModalWindow = ({ show, onClose, currentProject }) => {
           <a role='button' className='mx-2 btn btn-secondary border border-1 rounded-5 text-light' href={github} target='_blank'>GITHUB</a>
         </div>
       </Modal.Body>
-      <Modal.Footer style={{ border: 'solid green 3px' }} className='d-flex'>
-        <p style={{ border: 'solid purple 3px' }} className='col-12'>Technologies Used: {tech}</p>
+      <Modal.Footer className='d-flex'>
+        <p className='col-12 fs-5'>Technologies Used: {tech}</p>
         <button
           className='text-end btn btn-secondary border border-1 rounded-5 text-light'
           onClick={onClose}
