@@ -4,7 +4,7 @@ import LinkedIn from '../../assets/linkedin-svgrepo.svg'
 const Header = () => {
   return (
     <div className='sticky-lg-top bg-secondary d-flex flex-column flex-sm-column flex-md-row'>
-      <h1 className='mx-5 text-white text-center'>Julio Suarez</h1>
+      <a href='#' role='button' className='link-underline-opacity-0 link-light mx-5 fs-2'>Julio Suarez</a>
       <nav className='d-flex mx-3 mt-2 justify-content-between'>
         <p className='fs-4 text-center mx-3 mx-sm-3 mx-md-3'>
           <a href="#about" role="button" className="link-underline-opacity-0 link-opacity-75-hover link-light">
