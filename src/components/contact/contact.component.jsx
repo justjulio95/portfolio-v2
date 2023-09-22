@@ -42,7 +42,7 @@ const ContactForm = () => {
           <div className="container d-md-flex mt-3">
             <label htmlFor="message" className="form-label text-white mt-1 mx-4 fs-4">Message: </label>
             <br />
-            <textarea className="form-control"></textarea>
+            <textarea name="message" id="message" className="form-control"></textarea>
           </div>
           <br />
 
