@@ -7,7 +7,7 @@ const ContactForm = () => {
           className="col-sm-6 bg-secondary border border-2 rounded-2 shadow-lg"
           name="contact1"
           method="POST"
-          data-netlify="true"
+          netlify
           onSubmit="submit"
           //prime for spam prevention
           data-netlify-honeypot="bot-field"
