@@ -11,6 +11,7 @@ const ContactForm = () => {
           onSubmit="submit"
           //prime for spam prevention
           data-netlify-honeypot="bot-field"
+          netlify
         >
           <input type="hidden" name="form-name" value="contact1" />
           <div hidden>
